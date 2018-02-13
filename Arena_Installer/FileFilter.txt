@@ -1,0 +1,8 @@
+*\pac\arena\
+*\pac\menu\
+*\pac\prop\
+*\pac\root\
+*\pac\mov\ar_apron\
+*\pac\mov\ar_mini\
+*\pac\mov\ar_ramp\
+*\pac\mov\ar_wall\

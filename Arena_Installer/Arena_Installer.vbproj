@@ -72,11 +72,38 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="add_package.Designer.vb">
+      <DependentUpon>add_package.vb</DependentUpon>
+    </Compile>
+    <Compile Include="add_package.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="backup_menu.Designer.vb">
+      <DependentUpon>backup_menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="backup_menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileAndDirectoryCopy.vb" />
+    <Compile Include="FileAndDirectoryMove.vb" />
+    <Compile Include="install_menu.Designer.vb">
+      <DependentUpon>install_menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="install_menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_menu.Designer.vb">
+      <DependentUpon>main_menu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="move_or_Copy.Designer.vb">
+      <DependentUpon>move_or_Copy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="move_or_Copy.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -94,8 +121,26 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="PackageUninstaller.vb" />
+    <Compile Include="package_info.vb" />
+    <Compile Include="Encryption\Serialize.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="add_package.resx">
+      <DependentUpon>add_package.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="backup_menu.resx">
+      <DependentUpon>backup_menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="install_menu.resx">
+      <DependentUpon>install_menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main_menu.resx">
+      <DependentUpon>main_menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="move_or_Copy.resx">
+      <DependentUpon>move_or_Copy.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -114,6 +159,9 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FileFilter.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
